@@ -7,9 +7,10 @@
 
   ==============================================================================
 */
-
+#define _USE_MATH_DEFINES
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include "math.h"
 
 
 //==============================================================================
@@ -152,7 +153,7 @@ void AmbiEncoderAudioProcessor::processBlock(AudioSampleBuffer& buffer, MidiBuff
 		channelDataY[i] = audioIn * sin(azimuth);
 	}
 
-}
+	}
 //==============================================================================
 bool AmbiEncoderAudioProcessor::hasEditor() const
 {

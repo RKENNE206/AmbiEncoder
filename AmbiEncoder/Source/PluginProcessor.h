@@ -7,7 +7,8 @@
 
   ==============================================================================
 */
-
+#define _USE_MATH_DEFINES
+#include "math.h"
 #ifndef PLUGINPROCESSOR_H_INCLUDED
 #define PLUGINPROCESSOR_H_INCLUDED
 
